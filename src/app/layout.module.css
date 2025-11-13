@@ -1,3 +1,17 @@
 .grid {
-	grid-template-columns: auto 230px 1fr 230px auto;
+    display: grid;
+    grid-template-columns: auto 230px 600px 230px auto;
+    grid-template-areas: '. sidebarLeft main sidebarRight .';
+}
+
+.sidebarLeft {
+    grid-area: sidebarLeft;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebarRight {
+    grid-area: sidebarRight;
 }

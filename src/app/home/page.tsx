@@ -1,6 +1,5 @@
-import cls from './page.module.css';
+// import cls from './page.module.css';
 
-export function HomePage() {
-    return <div className={cls.home}></div>
-
+export default function HomePage() {
+    return <div>Home</div>;
 }
