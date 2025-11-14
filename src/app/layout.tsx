@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import cls from './layout.module.css';
 import { Header } from '@/components/Header/Header';
+import ProfileHeader from '@/components/ProfileHeader/ProfileHeader';
 
 const chirpFont = localFont({
     src: [
@@ -41,6 +42,7 @@ export default function RootLayout({
                 <div className={cls.grid}>
                     <header className={cls.sidebarLeft}>
                         <Header />
+                        <ProfileHeader />
                     </header>
                     <main className={cls.main}>{children}</main>
                     <aside className={cls.sidebarRight}>aside2</aside>

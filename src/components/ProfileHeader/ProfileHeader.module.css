@@ -1,0 +1,36 @@
+.profileBtn {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.nicknameBlock {
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 133%;
+    color: var(--color-text-primary);
+}
+
+.nickname {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    color: var(--color-text-secondary);
+}
+
+.dotsBlock {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
