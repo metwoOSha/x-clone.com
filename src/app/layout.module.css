@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: auto 230px 600px 230px auto;
+    grid-template-columns: auto 275px 600px 230px auto;
     grid-template-areas: '. sidebarLeft main sidebarRight .';
 }
 

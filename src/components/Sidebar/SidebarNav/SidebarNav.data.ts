@@ -1,4 +1,4 @@
-import { Navigation } from './header.interface';
+import { Navigation } from './SidebarNav.interface';
 
 const defaultSize = {
     width: 24,

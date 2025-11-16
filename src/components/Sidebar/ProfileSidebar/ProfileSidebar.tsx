@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import cls from './ProfileHeader.module.css';
+import cls from './ProfileSidebar.module.css';
 
-export default function ProfileHeader() {
+export default function ProfileSidebar() {
     return (
         <button className={cls.profileBtn}>
             <div>

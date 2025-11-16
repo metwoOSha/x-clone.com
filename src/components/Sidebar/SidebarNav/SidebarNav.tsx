@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import cls from './Header.module.css';
+import cls from './SidebarNav.module.css';
 
-import { nav } from './header.data';
+import { nav } from './SidebarNav.data';
 
-export function Header() {
+export default function SidebarNav() {
     return (
         <div className={cls.flex}>
             <div className={cls.logo}>
