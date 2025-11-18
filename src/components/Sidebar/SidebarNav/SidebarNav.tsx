@@ -2,6 +2,7 @@ import Image from 'next/image';
 import cls from './SidebarNav.module.css';
 
 import { nav } from './SidebarNav.data';
+import Link from 'next/link';
 
 export default function SidebarNav() {
     return (
@@ -24,6 +25,11 @@ export default function SidebarNav() {
                     </div>
                 ))}
             </nav>
+            <div className={cls.post}>
+                <Link href="#" className={cls.link}>
+                    <div className={cls.postBlock}>POST</div>
+                </Link>
+            </div>
         </div>
     );
 }

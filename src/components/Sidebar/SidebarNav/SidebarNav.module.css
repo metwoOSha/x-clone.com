@@ -39,3 +39,28 @@
 .navText {
     margin: 0 20px 0 16px;
 }
+
+.post {
+    margin: 8px 0;
+    width: 90%;
+}
+
+.link {
+    display: flex;
+    min-height: 52px;
+    padding: 0 32px;
+    background-color: var(--color-text-primary);
+    color: rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.postBlock {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
