@@ -43,7 +43,6 @@ export default function RootLayout({
                         <Sidebar />
                     </header>
                     <main className={cls.main}>{children}</main>
-                    <aside className={cls.sidebarRight}>aside2</aside>
                 </div>
             </body>
         </html>

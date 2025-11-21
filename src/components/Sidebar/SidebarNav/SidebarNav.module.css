@@ -3,8 +3,21 @@
     flex-direction: column;
 }
 
+.logoBlock {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.logoBlock:hover {
+    background-color: #181818;
+}
+
 .logo {
-    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 12px;
 }
 
 .navFlex {
@@ -29,7 +42,6 @@
     line-height: 24px;
     color: var(--color-text-primary);
     border-radius: 30px;
-    transition: 0.2s ease;
 }
 
 .navBlock:hover .navSpan {
@@ -43,6 +55,10 @@
 .post {
     margin: 8px 0;
     width: 90%;
+}
+
+.post:hover {
+    opacity: 0.9;
 }
 
 .link {

@@ -1,7 +1,7 @@
 .grid {
     display: grid;
-    grid-template-columns: auto 275px 600px 350px auto;
-    grid-template-areas: '. sidebarLeft main sidebarRight .';
+    grid-template-columns: auto 275px 1050px auto;
+    grid-template-areas: '. sidebarLeft main  .';
 }
 
 .sidebarLeft {
@@ -10,10 +10,4 @@
 
 .main {
     grid-area: main;
-    border-left: 1px solid rgb(47, 51, 54);
-    border-right: 1px solid rgb(47, 51, 54);
-}
-
-.sidebarRight {
-    grid-area: sidebarRight;
 }

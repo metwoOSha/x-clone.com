@@ -7,8 +7,10 @@ import Link from 'next/link';
 export default function SidebarNav() {
     return (
         <div className={cls.flex}>
-            <div className={cls.logo}>
-                <Image src="/icons/x-com.svg" alt="x-icon" width={24} height={24} />
+            <div className={cls.logoBlock}>
+                <div className={cls.logo}>
+                    <Image src="/icons/x-com.svg" alt="x-icon" width={24} height={24} />
+                </div>
             </div>
             <nav className={cls.navFlex}>
                 {nav.map((item) => (
@@ -27,7 +29,7 @@ export default function SidebarNav() {
             </nav>
             <div className={cls.post}>
                 <Link href="#" className={cls.link}>
-                    <div className={cls.postBlock}>POST</div>
+                    <div className={cls.postBlock}>Post</div>
                 </Link>
             </div>
         </div>

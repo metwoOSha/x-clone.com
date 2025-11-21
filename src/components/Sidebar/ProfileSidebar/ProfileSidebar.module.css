@@ -7,6 +7,11 @@
     background-color: inherit;
     border: none;
     outline: none;
+    border-radius: 30px;
+}
+
+.profileBtn:hover {
+    background-color: #181818;
 }
 
 .nicknameBlock {
