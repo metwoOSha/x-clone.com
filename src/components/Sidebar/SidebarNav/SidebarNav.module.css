@@ -4,9 +4,10 @@
 }
 
 .logoBlock {
-    height: 50px;
-    width: 50px;
+    height: 52px;
+    width: 52px;
     border-radius: 100%;
+    margin: 2px 0;
 }
 
 .logoBlock:hover {
@@ -17,7 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 12px;
+    padding: 10px 11px;
+    svg {
+        fill: currentcolor;
+    }
 }
 
 .navFlex {
@@ -49,7 +53,7 @@
 }
 
 .navText {
-    margin: 0 20px 0 16px;
+    margin: 0 16px 0 20px;
 }
 
 .post {
@@ -69,6 +73,7 @@
     color: rgba(0, 0, 0, 1);
     border-radius: 30px;
     border: none;
+    outline: none;
     font-weight: 700;
     font-size: 15px;
     text-decoration: none;
