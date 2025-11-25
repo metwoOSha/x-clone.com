@@ -1,5 +1,6 @@
 import TopTabs from '@/components/TopTabs/TopTabs';
 import cls from './HomePage.module.css';
+import SearchPanel from '@/components/SearchPanel/SearchPanel';
 
 export default function HomePage() {
     return (
@@ -7,7 +8,9 @@ export default function HomePage() {
             <section className={cls.mainSection}>
                 <TopTabs />
             </section>
-            <aside className={cls.aside}>aside</aside>
+            <aside className={cls.aside}>
+                <SearchPanel />
+            </aside>
         </div>
     );
 }

@@ -5,6 +5,7 @@
 }
 
 .btn {
+    width: 50%;
     padding: 0 16px;
     flex-grow: 1;
     border: none;
@@ -18,13 +19,16 @@
 }
 
 .block {
-    display: inline-block;
+    display: inline-flex;
     padding: 16px 0;
     position: relative;
     line-height: 20px;
     font-weight: 500;
     font-size: 15px;
     color: #71767b;
+    span {
+        transition: none !important;
+    }
 }
 
 .line {
@@ -39,9 +43,12 @@
 
 .active span {
     color: var(--color-text-primary);
+    transition: none !important;
     font-weight: 700;
+    transform: scaleX(0.9);
 }
 
 .active .line {
     display: block;
+    transition: none !important;
 }
