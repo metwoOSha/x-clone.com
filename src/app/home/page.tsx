@@ -1,6 +1,8 @@
 import TopTabs from '@/components/TopTabs/TopTabs';
 import cls from './HomePage.module.css';
 import SearchPanel from '@/components/SearchPanel/SearchPanel';
+import Button from '@/components/Button/Button';
+import WhoToFollow from '@/components/WhoToFollow/WhoToFollow';
 
 export default function HomePage() {
     return (
@@ -10,6 +12,11 @@ export default function HomePage() {
             </section>
             <aside className={cls.aside}>
                 <SearchPanel />
+                <Button type="follow" />
+                <Button type="following" />
+                <Button type="edit" />
+                <Button type="post" disabled={false} />
+                <WhoToFollow />
             </aside>
         </div>
     );

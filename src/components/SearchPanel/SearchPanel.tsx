@@ -6,7 +6,7 @@ import cls from './SearchPanel.module.css';
 export default function SearchPanel() {
     const [input, setInput] = useState('');
     return (
-        <form>
+        <form className={cls.form}>
             <div className={cls.search}>
                 <div className={cls.searchIcon}>
                     <svg
@@ -28,7 +28,7 @@ export default function SearchPanel() {
                 />
                 {input && (
                     <div className={cls.closeBtnIcon}>
-                        <button type="button" className={cls.closeBtn}>
+                        <button type="button" className={cls.closeBtn} onClick={() => setInput('')}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="22"

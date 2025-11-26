@@ -1,0 +1,38 @@
+.follow {
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: start;
+    padding: 12px 16px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.item {
+    padding: 12px 16px;
+}
+
+.img {
+    margin-right: 8px;
+}
+
+.profileName {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    padding: 12px 16px;
+}

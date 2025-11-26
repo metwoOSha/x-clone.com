@@ -1,0 +1,79 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 0 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    transition: none !important;
+}
+
+.follow {
+    min-width: 78px;
+    background-color: #eff3f4;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.follow:hover {
+    opacity: 0.95;
+}
+
+.follow:active {
+    opacity: 0.9;
+}
+
+.following {
+    min-width: 99px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg-primary);
+    color: #eff3f4;
+}
+
+.following span::after {
+    content: 'Following';
+}
+
+.following:hover {
+    border-color: rgb(103, 7, 15);
+    background-color: rgba(244, 33, 46, 0.1);
+}
+
+.following:active {
+    background-color: rgba(244, 33, 46, 0.2);
+}
+
+.following:hover span::after {
+    content: 'Unfollow';
+    color: rgb(244, 33, 46);
+}
+
+.edit {
+    min-height: 36px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg-primary);
+    color: #eff3f4;
+}
+
+.edit:hover {
+    background-color: rgba(239, 243, 244, 0.1);
+}
+
+.post {
+    min-height: 36px;
+    min-width: 36px;
+    background-color: #eff3f4;
+    color: #0f1419;
+}
+
+.post:disabled {
+    background-color: #eff3f4;
+    color: #0f1419;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
