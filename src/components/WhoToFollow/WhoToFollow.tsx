@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import cls from './WhoToFollow.module.css';
+import Button from '../Button/Button';
 
 export default function WhoToFollow() {
     return (
@@ -11,7 +12,7 @@ export default function WhoToFollow() {
                 </div>
                 <ul className={cls.list}>
                     <li className={cls.item}>
-                        <div>
+                        <div className={cls.flex}>
                             <Image
                                 src="/icons/avatar.svg"
                                 alt="icon"
@@ -19,18 +20,69 @@ export default function WhoToFollow() {
                                 height={40}
                                 className={cls.img}
                             />
-                            <div className={cls.profileName}>
-                                <div>
-                                    <span></span>
+                            <div className={cls.block}>
+                                <div className={cls.profileName}>
+                                    <div className={cls.nick}>
+                                        <span>metwoO</span>
+                                    </div>
+                                    <div className={cls.nickname}>
+                                        <span>@metwoOSha</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span></span>
+                                <div className={cls.btn}>
+                                    <Button type="follow" />
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li className={cls.item}>123</li>
-                    <li className={cls.item}>123</li>
+                    <li className={cls.item}>
+                        <div className={cls.flex}>
+                            <Image
+                                src="/icons/avatar.svg"
+                                alt="icon"
+                                width={40}
+                                height={40}
+                                className={cls.img}
+                            />
+                            <div className={cls.block}>
+                                <div className={cls.profileName}>
+                                    <div className={cls.nick}>
+                                        <span>metwoO</span>
+                                    </div>
+                                    <div className={cls.nickname}>
+                                        <span>@metwoOSha</span>
+                                    </div>
+                                </div>
+                                <div className={cls.btn}>
+                                    <Button type="follow" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li className={cls.item}>
+                        <div className={cls.flex}>
+                            <Image
+                                src="/icons/avatar.svg"
+                                alt="icon"
+                                width={40}
+                                height={40}
+                                className={cls.img}
+                            />
+                            <div className={cls.block}>
+                                <div className={cls.profileName}>
+                                    <div className={cls.nick}>
+                                        <span>metwoO</span>
+                                    </div>
+                                    <div className={cls.nickname}>
+                                        <span>@metwoOSha</span>
+                                    </div>
+                                </div>
+                                <div className={cls.btn}>
+                                    <Button type="follow" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <Link href="#" className={cls.link}>
                     Show more
