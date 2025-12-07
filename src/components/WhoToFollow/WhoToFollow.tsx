@@ -30,7 +30,7 @@ export default function WhoToFollow() {
                                     </div>
                                 </div>
                                 <div className={cls.btn}>
-                                    <Button type="follow" />
+                                    <Button variant="follow" />
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ export default function WhoToFollow() {
                                     </div>
                                 </div>
                                 <div className={cls.btn}>
-                                    <Button type="follow" />
+                                    <Button variant="follow" />
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default function WhoToFollow() {
                                     </div>
                                 </div>
                                 <div className={cls.btn}>
-                                    <Button type="follow" />
+                                    <Button variant="follow" />
                                 </div>
                             </div>
                         </div>
