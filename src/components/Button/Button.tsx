@@ -2,26 +2,27 @@ import { ButtonProps } from './Button.interface';
 import cls from './Button.module.css';
 import cn from 'classnames';
 
-export default function Button({ type, disabled = false }: ButtonProps) {
+export default function Button({ variant, disabled, ...props }: ButtonProps) {
     return (
         <button
             type="button"
             disabled={disabled}
             className={cn(cls.btn, {
-                [cls.follow]: type === 'follow',
-                [cls.following]: type === 'following',
-                [cls.edit]: type === 'edit',
-                [cls.post]: type === 'post',
+                [cls.follow]: variant === 'follow',
+                [cls.following]: variant === 'following',
+                [cls.edit]: variant === 'edit',
+                [cls.post]: variant === 'post',
             })}
+            {...props}
         >
             <span>
-                {type === 'follow'
+                {variant === 'follow'
                     ? 'Follow'
-                    : type === 'following'
+                    : variant === 'following'
                     ? ''
-                    : type === 'edit'
+                    : variant === 'edit'
                     ? 'Edit profile'
-                    : type === 'post'
+                    : variant === 'post'
                     ? 'Post'
                     : ''}
             </span>
