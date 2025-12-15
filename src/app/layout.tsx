@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 
 import './globals.css';
-import cls from './layout.module.css';
-import Sidebar from '@/components/Sidebar/Sidebar';
 
 const chirpFont = localFont({
     src: [
@@ -37,14 +35,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${chirpFont.className} `}>
-                <div className={cls.grid}>
-                    <header className={cls.sidebarLeft}>
-                        <Sidebar />
-                    </header>
-                    <main className={cls.main}>{children}</main>
-                </div>
-            </body>
+            <body className={`${chirpFont.className} `}>{children}</body>
         </html>
     );
 }

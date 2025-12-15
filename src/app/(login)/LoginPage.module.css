@@ -1,0 +1,87 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-grow: 1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+/* .logoBlock {
+
+} */
+
+.loginWrapper {
+    height: 100%;
+    min-width: 45vw;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.loginBlock {
+    max-width: 760px;
+    min-width: 437px;
+    padding: 20px;
+}
+
+.loginTitle {
+    margin: 48px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: -1.2px;
+}
+
+.loginSubtitle {
+    margin-bottom: 32px;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.orLine {
+    margin: 8px 0;
+    max-width: 380px;
+    width: 300px;
+}
+
+.orLineFlex {
+    display: flex;
+    align-items: center;
+    margin: 0 -4px;
+}
+
+.lineBlock {
+    margin: 0 4px;
+    flex-grow: 1;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(47, 51, 54);
+}
+
+.or {
+    margin: 0 4px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.nav {
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+}

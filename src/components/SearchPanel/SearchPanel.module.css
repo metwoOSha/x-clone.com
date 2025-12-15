@@ -39,10 +39,6 @@
     transition: none !important;
 }
 
-/* input:focus {
-    transform: scaleX(1.0075);
-} */
-
 .closeBtnIcon {
     display: flex;
     align-items: center;
@@ -53,6 +49,7 @@
     border: none;
     outline: none;
     margin-right: 12px;
+    cursor: pointer;
     svg {
         fill: #eff3f4;
     }

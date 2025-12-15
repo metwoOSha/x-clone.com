@@ -12,10 +12,10 @@ export default function HomePage() {
             </section>
             <aside className={cls.aside}>
                 <SearchPanel />
-                <Button type="follow" />
-                <Button type="following" />
-                <Button type="edit" />
-                <Button type="post" disabled={false} />
+                <Button variant="follow" />
+                <Button variant="following" />
+                <Button variant="edit" />
+                <Button variant="post" disabled={false} />
                 <WhoToFollow />
             </aside>
         </div>

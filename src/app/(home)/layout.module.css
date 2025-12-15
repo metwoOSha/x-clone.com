@@ -1,0 +1,13 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto 275px 1050px auto;
+    grid-template-areas: '. sidebarLeft main  .';
+}
+
+.sidebarLeft {
+    grid-area: sidebarLeft;
+}
+
+.main {
+    grid-area: main;
+}
