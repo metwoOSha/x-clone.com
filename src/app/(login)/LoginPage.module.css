@@ -51,10 +51,18 @@
     line-height: 36px;
 }
 
-.orLine {
-    margin: 8px 0;
+.loginButton {
     max-width: 380px;
     width: 300px;
+}
+
+.socialLogin {
+    display: flex;
+    align-items: center;
+}
+
+.orLine {
+    margin: 8px 0;
 }
 
 .orLineFlex {

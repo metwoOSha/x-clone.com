@@ -2,7 +2,7 @@ import { ButtonProps } from './Button.interface';
 import cls from './Button.module.css';
 import cn from 'classnames';
 
-export default function Button({ variant, disabled, ...props }: ButtonProps) {
+export default function Button({ variant, disabled, children, ...props }: ButtonProps) {
     return (
         <button
             type="button"
@@ -12,6 +12,7 @@ export default function Button({ variant, disabled, ...props }: ButtonProps) {
                 [cls.following]: variant === 'following',
                 [cls.edit]: variant === 'edit',
                 [cls.post]: variant === 'post',
+                [cls.social]: variant === 'social',
             })}
             {...props}
         >
@@ -24,6 +25,8 @@ export default function Button({ variant, disabled, ...props }: ButtonProps) {
                     ? 'Edit profile'
                     : variant === 'post'
                     ? 'Post'
+                    : variant === 'social'
+                    ? children
                     : ''}
             </span>
         </button>
