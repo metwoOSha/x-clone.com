@@ -1,0 +1,22 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.backdrop {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(91, 112, 131, 0.4);
+}
+
+.loginBlock {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 600px;
+    width: 400px;
+    background-color: brown;
+}

@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Button from '@/components/Button/Button';
 import cls from './LoginPage.module.css';
 
-export default function LoginPage() {
+export default function MainLoginPage() {
     return (
-        <main className={cls.main}>
+        <div className={cls.main}>
             <div className={cls.flex}>
                 <div className={cls.wrapper}>
                     <div className={cls.logo}>
@@ -89,6 +89,6 @@ export default function LoginPage() {
                 </div>
                 <nav className={cls.nav}>footer</nav>
             </div>
-        </main>
+        </div>
     );
 }
