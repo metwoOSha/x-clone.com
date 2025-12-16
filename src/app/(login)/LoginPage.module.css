@@ -16,9 +16,23 @@
     flex: 1 1 auto;
 }
 
-/* .logoBlock {
+.logo {
+    min-height: 45vh;
+    flex-grow: 1;
+    position: relative;
+}
 
-} */
+.logoBlock {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    max-height: 380px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 
 .loginWrapper {
     height: 100%;
@@ -27,7 +41,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
 }
 
 .loginBlock {
@@ -88,8 +101,44 @@
     line-height: 20px;
 }
 
+.google {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.github {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.createButton {
+    margin-bottom: 16px;
+}
+
+.create {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
 .nav {
     padding: 12px 16px;
     display: flex;
     justify-content: center;
+}
+
+.signIn {
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 90px;
+}
+
+.signInTitle {
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 20px;
 }

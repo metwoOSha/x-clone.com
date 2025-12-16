@@ -13,6 +13,7 @@ export default function Button({ variant, disabled, children, ...props }: Button
                 [cls.edit]: variant === 'edit',
                 [cls.post]: variant === 'post',
                 [cls.social]: variant === 'social',
+                [cls.socialBlack]: variant === 'social-black',
             })}
             {...props}
         >
@@ -25,7 +26,7 @@ export default function Button({ variant, disabled, children, ...props }: Button
                     ? 'Edit profile'
                     : variant === 'post'
                     ? 'Post'
-                    : variant === 'social'
+                    : variant === 'social' || variant === 'social-black'
                     ? children
                     : ''}
             </span>

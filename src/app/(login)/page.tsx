@@ -8,7 +8,17 @@ export default function LoginPage() {
         <main className={cls.main}>
             <div className={cls.flex}>
                 <div className={cls.wrapper}>
-                    <div className={cls.logoBlock}>logo</div>
+                    <div className={cls.logo}>
+                        <div className={cls.logoBlock}>
+                            <Image
+                                src="/icons/x-com.svg"
+                                alt="google icon"
+                                width={0}
+                                height={0}
+                                style={{ height: '100%', width: '100%' }}
+                            />
+                        </div>
+                    </div>
                     <div className={cls.loginWrapper}>
                         <div className={cls.loginBlock}>
                             <div className={cls.loginTitle}>
@@ -18,7 +28,7 @@ export default function LoginPage() {
                                 <span>Join today.</span>
                             </div>
                             <div className={cls.loginButton}>
-                                <div>
+                                <div style={{ marginBottom: '16px' }}>
                                     <Button variant="social">
                                         <div className={cls.socialLogin}>
                                             <span style={{ marginRight: '8px' }}>
@@ -30,12 +40,24 @@ export default function LoginPage() {
                                                 />
                                             </span>
 
-                                            <span>Sign up with Google</span>
+                                            <span className={cls.google}>Sign up with Google</span>
                                         </div>
                                     </Button>
                                 </div>
                                 <div>
-                                    <Button variant="social">Sign up with Apple</Button>
+                                    <Button variant="social">
+                                        <div className={cls.socialLogin}>
+                                            <span style={{ marginRight: '8px' }}>
+                                                <Image
+                                                    src="/icons/github.svg"
+                                                    alt="google icon"
+                                                    width={20}
+                                                    height={20}
+                                                />
+                                            </span>
+                                            <span className={cls.github}>Sign up with Github</span>
+                                        </div>
+                                    </Button>
                                 </div>
                                 <div className={cls.orLine}>
                                     <div className={cls.orLineFlex}>
@@ -50,8 +72,16 @@ export default function LoginPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <Button variant="social">Create account</Button>
+                                <div className={cls.createButton}>
+                                    <Button variant="social">
+                                        <span className={cls.create}>Create account</span>
+                                    </Button>
+                                </div>
+                                <div className={cls.signIn}>
+                                    <div className={cls.signInTitle}>
+                                        <span>Already have an account?</span>
+                                    </div>
+                                    <Button variant="social-black">Sign In</Button>
                                 </div>
                             </div>
                         </div>
