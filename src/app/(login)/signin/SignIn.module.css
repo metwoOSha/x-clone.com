@@ -36,7 +36,7 @@
 }
 
 .inputForm {
-	padding: 12px 0;
+    padding: 12px 0;
 }
 
 .btnForm {
@@ -49,4 +49,23 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 20px;
+}
+
+.signUp {
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(113, 118, 123);
+}
+
+.signUpBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--color-brand);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
 }

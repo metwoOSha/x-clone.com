@@ -33,8 +33,18 @@ export default function SignInPage() {
                         </div>
                         <div className={cls.btnForm}>
                             <Button variant="social-black">
-                                <span className={cls.create}>Forgot password?</span>
+                                <span className={cls.create}>
+                                    Forgot password?
+                                </span>
                             </Button>
+                        </div>
+                        <div className={cls.signUp}>
+                            <span className={cls.signUpText}>
+                                Don&apos;t have an account?{' '}
+                                <button className={cls.signUpBtn}>
+                                    Sign up
+                                </button>
+                            </span>
                         </div>
                     </div>
                 </div>
