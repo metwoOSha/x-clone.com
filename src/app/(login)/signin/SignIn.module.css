@@ -1,0 +1,42 @@
+.signIn {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signInBlock {
+    min-width: 600px;
+    min-height: 400px;
+    max-height: 90vh;
+    height: 650px;
+    max-width: 80vw;
+    border-radius: 16px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.formBlock {
+    margin: 0 auto;
+    width: 364px;
+    padding: 0 32px 48px 32px;
+}
+
+.titleForm {
+    margin: 20px 0;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.btnForm {
+    display: inline-block;
+    width: 100%;
+    margin: 12px 0;
+}

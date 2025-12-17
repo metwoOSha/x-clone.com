@@ -1,0 +1,36 @@
+.LoginFormHeader {
+    height: 53px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftBlock {
+    flex: 1;
+}
+
+.closeBtn {
+    min-width: 36px;
+    min-height: 36px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeBtn:hover {
+    background-color: rgba(239, 243, 244, 0.1);
+    border-radius: 9999px;
+}
+
+.logo {
+    margin-top: 4px;
+}
+
+.rightBlock {
+    flex: 1;
+}

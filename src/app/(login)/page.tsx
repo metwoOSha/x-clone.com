@@ -2,8 +2,9 @@ import Image from 'next/image';
 
 import Button from '@/components/Button/Button';
 import cls from './LoginPage.module.css';
+import OrLine from '@/components/OrLine/OrLine';
 
-export default function MainLoginPage() {
+export default function LoginPage() {
     return (
         <div className={cls.main}>
             <div className={cls.flex}>
@@ -29,49 +30,12 @@ export default function MainLoginPage() {
                             </div>
                             <div className={cls.loginButton}>
                                 <div style={{ marginBottom: '16px' }}>
-                                    <Button variant="social">
-                                        <div className={cls.socialLogin}>
-                                            <span style={{ marginRight: '8px' }}>
-                                                <Image
-                                                    src="/icons/google.svg"
-                                                    alt="google icon"
-                                                    width={20}
-                                                    height={20}
-                                                />
-                                            </span>
-
-                                            <span className={cls.google}>Sign up with Google</span>
-                                        </div>
-                                    </Button>
+                                    <Button variant="social-google" />
                                 </div>
                                 <div>
-                                    <Button variant="social">
-                                        <div className={cls.socialLogin}>
-                                            <span style={{ marginRight: '8px' }}>
-                                                <Image
-                                                    src="/icons/github.svg"
-                                                    alt="google icon"
-                                                    width={20}
-                                                    height={20}
-                                                />
-                                            </span>
-                                            <span className={cls.github}>Sign up with Github</span>
-                                        </div>
-                                    </Button>
+                                    <Button variant="social-github" />
                                 </div>
-                                <div className={cls.orLine}>
-                                    <div className={cls.orLineFlex}>
-                                        <div className={cls.lineBlock}>
-                                            <div className={cls.line}></div>
-                                        </div>
-                                        <div className={cls.or}>
-                                            <span>OR</span>
-                                        </div>
-                                        <div className={cls.lineBlock}>
-                                            <div className={cls.line}></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <OrLine />
                                 <div className={cls.createButton}>
                                     <Button variant="social">
                                         <span className={cls.create}>Create account</span>

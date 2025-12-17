@@ -69,49 +69,7 @@
     width: 300px;
 }
 
-.socialLogin {
-    display: flex;
-    align-items: center;
-}
 
-.orLine {
-    margin: 8px 0;
-}
-
-.orLineFlex {
-    display: flex;
-    align-items: center;
-    margin: 0 -4px;
-}
-
-.lineBlock {
-    margin: 0 4px;
-    flex-grow: 1;
-}
-
-.line {
-    height: 1px;
-    background-color: rgb(47, 51, 54);
-}
-
-.or {
-    margin: 0 4px;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.google {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.github {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-}
 
 .createButton {
     margin-bottom: 16px;

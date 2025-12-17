@@ -104,3 +104,20 @@
 .socialBlack:hover {
     background-color: rgba(239, 243, 244, 0.1);
 }
+
+.socialLogin {
+    display: flex;
+    align-items: center;
+}
+
+.google {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.github {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
