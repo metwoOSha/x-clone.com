@@ -35,8 +35,18 @@
     line-height: 36px;
 }
 
+.inputForm {
+	padding: 12px 0;
+}
+
 .btnForm {
     display: inline-block;
     width: 100%;
     margin: 12px 0;
+}
+
+.create {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
 }

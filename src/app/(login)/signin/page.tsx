@@ -2,6 +2,7 @@ import LoginFormHeader from '@/components/LoginFormHeader/LoginFormHeader';
 import cls from './SignIn.module.css';
 import Button from '@/components/Button/Button';
 import OrLine from '@/components/OrLine/OrLine';
+import InputForm from '@/components/InputForm/InputForm';
 
 export default function SignInPage() {
     return (
@@ -22,9 +23,17 @@ export default function SignInPage() {
                             <Button variant="social-github" />
                         </div>
                         <OrLine />
+                        <div className={cls.inputForm}>
+                            <InputForm />
+                        </div>
                         <div className={cls.btnForm}>
                             <Button variant="social">
                                 <span className={cls.create}>Next</span>
+                            </Button>
+                        </div>
+                        <div className={cls.btnForm}>
+                            <Button variant="social-black">
+                                <span className={cls.create}>Forgot password?</span>
                             </Button>
                         </div>
                     </div>
