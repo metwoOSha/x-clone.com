@@ -7,12 +7,14 @@ export default function Button({
     variant,
     disabled,
     children,
+    onClick,
     ...props
 }: ButtonProps) {
     return (
         <button
             type="button"
             disabled={disabled}
+            onClick={onClick}
             className={cn(
                 cls.btn,
                 {

@@ -12,4 +12,5 @@ export interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
         | 'social-github'
         | 'large';
     children?: React.ReactNode;
+    onClick?: () => void;
 }
