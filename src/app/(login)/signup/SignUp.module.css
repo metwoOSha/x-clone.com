@@ -1,0 +1,88 @@
+.signUp {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(91, 112, 131, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpBlock {
+    min-width: 600px;
+    min-height: 400px;
+    max-height: 90vh;
+    height: 650px;
+    max-width: 80vw;
+    border-radius: 16px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.signUpForm {
+    flex-grow: 1;
+}
+
+.signUpFormInput {
+    padding: 0 80px;
+}
+
+.titleForm {
+    margin: 20px 0;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.signUpBtn {
+    padding: 0 80px;
+    margin: 24px 0;
+}
+
+.inputForm {
+    padding: 12px 0;
+}
+
+.signUpDate {
+    margin-top: 20px;
+    padding: 0 80px;
+}
+
+.signUpDateTitle {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.signUpDateSubtitle {
+    max-width: 440px;
+    padding-bottom: 4px;
+    color: rgb(113, 118, 123);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.dateForm {
+    margin: 12px 0;
+    display: flex;
+    gap: 12px;
+    color: rgb(231, 233, 234);
+}
+
+.month {
+    flex-grow: 2;
+}
+
+.day {
+    flex-grow: 1;
+}
+
+.year {
+    flex-grow: 1;
+}
+

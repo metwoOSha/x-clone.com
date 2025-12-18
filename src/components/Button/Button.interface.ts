@@ -9,6 +9,7 @@ export interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
         | 'social'
         | 'social-black'
         | 'social-google'
-        | 'social-github';
+        | 'social-github'
+        | 'large';
     children?: React.ReactNode;
 }

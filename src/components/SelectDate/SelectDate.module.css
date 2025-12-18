@@ -1,0 +1,68 @@
+.label {
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgb(51, 54, 57);
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 8px 0 8px;
+    color: rgb(113, 118, 123);
+    font-size: small;
+    font-weight: 400;
+    line-height: 16px;
+    transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+        font-size 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.select {
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px 8px 8px 8px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: rgba(231, 233, 234, 1);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    option {
+        background-color: black;
+        color: rgba(231, 233, 234, 1);
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -11.25px;
+    pointer-events: none;
+    svg {
+        fill: rgb(113, 118, 123);
+    }
+}
+
+.label:focus-within {
+    border-color: var(--color-brand);
+    box-shadow: 0px 0px 0px 1px var(--color-brand);
+}
+
+.label:focus-within .placeholder {
+    font-size: small;
+    line-height: 16px;
+    color: var(--color-brand);
+    padding-top: 8px;
+}
+
+.label:focus-within .arrow {
+    svg {
+        fill: var(--color-brand);
+    }
+}

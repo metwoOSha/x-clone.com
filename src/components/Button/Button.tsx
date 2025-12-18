@@ -3,22 +3,31 @@ import { ButtonProps } from './Button.interface';
 import cls from './Button.module.css';
 import cn from 'classnames';
 
-export default function Button({ variant, disabled, children, ...props }: ButtonProps) {
+export default function Button({
+    variant,
+    disabled,
+    children,
+    ...props
+}: ButtonProps) {
     return (
         <button
             type="button"
             disabled={disabled}
-            className={cn(cls.btn, {
-                [cls.follow]: variant === 'follow',
-                [cls.following]: variant === 'following',
-                [cls.edit]: variant === 'edit',
-                [cls.post]: variant === 'post',
-                [cls.social]:
-                    variant === 'social' ||
-                    variant === 'social-google' ||
-                    variant === 'social-github',
-                [cls.socialBlack]: variant === 'social-black',
-            })}
+            className={cn(
+                cls.btn,
+                {
+                    [cls.follow]: variant === 'follow',
+                    [cls.following]: variant === 'following',
+                    [cls.edit]: variant === 'edit',
+                    [cls.post]: variant === 'post',
+                    [cls.social]:
+                        variant === 'social' ||
+                        variant === 'social-google' ||
+                        variant === 'social-github',
+                    [cls.socialBlack]: variant === 'social-black',
+                },
+                variant === 'large' && [cls.social, cls.large]
+            )}
             {...props}
         >
             <span>
@@ -30,7 +39,9 @@ export default function Button({ variant, disabled, children, ...props }: Button
                     'Edit profile'
                 ) : variant === 'post' ? (
                     'Post'
-                ) : variant === 'social' || variant === 'social-black' ? (
+                ) : variant === 'social' ||
+                  variant === 'social-black' ||
+                  variant === 'large' ? (
                     children
                 ) : variant === 'social-google' ? (
                     <div className={cls.socialLogin}>

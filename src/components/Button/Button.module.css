@@ -121,3 +121,9 @@
     font-weight: 400;
     line-height: 20px;
 }
+
+.large {
+    min-height: 52px;
+    font-size: 17px;
+    line-height: 20px;
+}

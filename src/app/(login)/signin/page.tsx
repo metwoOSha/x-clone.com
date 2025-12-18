@@ -24,7 +24,7 @@ export default function SignInPage() {
                         </div>
                         <OrLine />
                         <div className={cls.inputForm}>
-                            <InputForm />
+                            <InputForm variant="email" />
                         </div>
                         <div className={cls.btnForm}>
                             <Button variant="social">
